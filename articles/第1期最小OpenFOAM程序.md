@@ -1,32 +1,25 @@
-OpenFOAM 探险队(原名 OpenFOAM たんけんたい)
-
-原作:Yuu Kasuga (penguinitis2002@yahoo.co.jp)
-
-翻译:HoTsAUce (houkensjtu@gmail.com qq:305649246)
+>OpenFOAM 探险队(原名 OpenFOAM たんけんたい)是由一名日本OpenFOAM资深用户在其博客发表的OpenFOAM源代码探索系列教程。
+>原作可以在[这里](http://www.geocities.jp/penguinitis2002/study/OpenFOAM/tankentai/)找到。
+>原作:Yuu Kasuga (penguinitis2002@yahoo.co.jp)
+>翻译:houkensjtu (houkensjtu@gmail.com)
 
 作者序:
 
 为了潜入 OpenFOAM 源代码茂密的丛林深处,我们组织了这支探险队。以下是活动报告。
 
-第一期 最小 OpenFOAM 程序
+*第一期 最小 OpenFOAM 程序
 
-目的:
+**目的:
 
-作为学习 OpenFOAM 编程的第一步,让我们学习一下如何制作一个最小的 OpenFOAM 程
+作为学习 OpenFOAM 编程的第一步,让我们学习一下如何制作一个最小的 OpenFOAM 程序吧。
 
-序吧。
-
-使用版本:
+**使用版本:
 
 OpenFOAM 1.6(译者注:译者用 2.1.x 版也大都能够编译通过并成功运行)
 
-程序说明:
+**程序说明:
 
-参照 OpenFOAM 原有 solver 的目录安排方式,需要首先制作一个容纳自己程序源代码的目
-
-录。下载并解压 01-mini.tar.gz 即可。(译者注:如何解压以及目录的基本概念需自行学习 linux
-
-基础)
+参照 OpenFOAM 原有 solver 的目录安排方式,需要首先制作一个容纳自己程序源代码的目录。下载并解压 01-mini.tar.gz即可。(译者注:如何解压以及目录的基本概念需自行学习 linux基础)
 
 解压后目录下有如下文件:
 
@@ -82,15 +75,15 @@ return 0;
 
 类似于 c++中 cout 的标准输出流的一个语句。
 
-编译与执行:
+**编译与执行:
 
 在代码目录下(不要进到 Make 目录里),执行 wmake 即可编译。如果没有问题的话,当前
 
 目录下会产生一个叫做 mini 的文件,执行试试看吧~
 
-$ wmake
+`$ wmake`
 
-$ ./mini
+`$ ./mini`
 
 执行以后,应该会在终端显示出一行"minimum OpenFOAM program"的字样。
 
