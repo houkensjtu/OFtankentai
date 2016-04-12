@@ -25,33 +25,27 @@ OpenFOAM 1.6(译者注:译者用 2.1.x 版也大都能够编译通过并成功�
 参照 OpenFOAM 原有 solver 的目录安排方式,需要首先制作一个容纳自己程序源代码的目录。下载并解压 01-mini.tar.gz即可。(译者注:如何解压以及目录的基本概念需自行学习 linux基础)
 
 解压后目录下有如下文件:
-
- Make/files
-
- Make/options
-
- mini.C
-
+```
+Make/files
+Make/options
+mini.C
+```
 Make 文件夹下的 files 和 options 是 wmake 编辑源代码所需的文件。(译者注:wmake 用
 
 法类似于 gnu make,此处需先行学习 make 的基本概念)
-
+```
 Make/files
-
 mini.C
-
 EXE = mini
-
+```
 files 文件中第一行指明了需要编译的代码文件名,第二行指定了编译后产生的可执行文件名。
 
 由于没有指定特殊的路径,此处 wmake 产生的可执行文件将位于当前目录下。
-
+```
 Make/options
-
 EXE_INC = -I$(LIB_SRC)/finiteVolume/lnInclude
-
 EXE_LIBS = -lfiniteVolume
-
+```
 options 文件中的"EXE_INC = -I..."指明了头文件的搜索路径,相应的,"EXE_LIBS = -l..."指
 
 明了链接的 library 的位置。根据所编程序的需要功能,可能会需要更多的头文件和 library,
@@ -62,18 +56,15 @@ mini.C 就是这次制作的最小程序了。严密的说,“最小”程序,�
 
 程序,但是那样的话就没有任何学习意义了,所以我们选择在程序中输出一些语句。
 
+```c
 #include "fvCFD.H"
 
 int main(int argc, char *argv[])
-
 {
-
 Info << "minimum OpenFOAM program" << endl;
-
 return 0;
-
 }
-
+```
 这里 fvCFD.H 貌似是一个 OpenFOAM 基础的必须的头文件。Info 则是 OpenFOAM 自有的,
 
 类似于 c++中 cout 的标准输出流的一个语句。
