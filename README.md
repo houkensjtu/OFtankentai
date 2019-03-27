@@ -1,7 +1,7 @@
 OFtankentai
 ===========
 
-:herb:Openfoam探险队教程中文翻译
+## :herb:Openfoam探险队教程中文翻译
 
 >OpenFOAM 探险队(原名 OpenFOAM たんけんたい)是由一名日本OpenFOAM资深用户在其博客发表的OpenFOAM源代码探索系列教程。
 >
@@ -19,7 +19,7 @@ OFtankentai
 [第二期 参数列表](./articles/第2期参数列表.md)  
 [第三期 时间类](./articles/第3期时间类.md)  
 
-番外篇：ハードボイルドの森:palm_tree:
+## :palm_tree:番外篇：ハードボイルドの森
 
 (以下内容为翻译者原创)
 
