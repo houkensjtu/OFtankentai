@@ -28,4 +28,4 @@ OFtankentai
 ながもん「情報四面体によって造られた対有機化合物コンパクト用ヒューマンインターネットフェイス、それが、私」  
 正直言おう・・・、俺はこいつらが何を言ってるのかさっぱりわからなかった。  
 
-[Case1 : Laminar flow in a 2D rectangular channel](./validations/Axis_Hagen/readme.md)
+[Case1 : Laminar flow in a 2D axis-symmetric channel](./validations/Axis_Hagen/readme.md)
