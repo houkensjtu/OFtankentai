@@ -2,11 +2,14 @@
 
 ### Theory : What is Turbulence?
 
-![alt text](../../images/Axis_Turb/turb_intro1.png "turbintro")
-![alt text](../../images/Axis_Turb/turb_intro2.png "turbintro")
+> The originial tutorial from [Wolfdynamics](http://www.wolfdynamics.com/images/pdf/turbulence_2019.pdf).
+
 - Definition of turbulence is a very challenging issue due to its extremely complex nature and incomplete understanding of its theory. 
 - Turbulence. Does it matter?
-    - Usually the existence of turbulence enhances heat transfer, and lower the flow resistance (because the existence of many small vortexes in the flow region).
+    - Usually the existence of turbulence enhances heat transfer, and lower the flow resistance (because the existence of many small vortexes in the flow region).   
+![alt text](../../images/Axis_Turb/turb_intro1.png "turbintro")
+![alt text](../../images/Axis_Turb/turb_intro2.png "turbintro")
+
 ### Modeling turbulence
 - The goal of turbulence modeling is to develop equations that predict **the time averaged** velocity, pressure, temperature fields without calculating the complete turbulent flow pattern as a function of time.
 - There is **no universal turbulence model,** hence you need to know the capabilities and limitations of the turbulence models.
