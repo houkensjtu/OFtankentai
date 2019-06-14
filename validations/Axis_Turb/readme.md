@@ -23,3 +23,7 @@
 - It's impractical to simulate all the fluctuation in the flow, thus we need modeling. To remove the instantaneous fluctuations or small scales, two methods can be used: Reynolds averaging and Filtering.
 
 - Grid requirement : DNS > LES > RAS(RANS)
+
+- As shown in the following graph, RANS is modeling all the eddies, while LES models to a certain level.
+
+![alt text](../../images/Axis_Turb/energySpec.png "Turbulence energy")
