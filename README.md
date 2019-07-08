@@ -37,4 +37,8 @@ OFtankentai
 ### 1. Introduction
 - 对流式换热器在低温系统中被广泛应用（Recuperative heat exchangers，不同于回热式换热器regenerative heat exchangers）。提高换热器性能可以降低低温端
 温度，或者减少系统所需要的制冷量。
+### 2. Specification
 - 换热器设计的要求如下，最重要的是效率超过99%（可是效率的定义是？）
+<img src="./images/Evan/spec.png" width = 450px>
+
+### 3. Literature review
