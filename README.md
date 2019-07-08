@@ -30,3 +30,11 @@ OFtankentai
 
 [Case1 : Laminar flow in a 2D axis-symmetric channel](./validations/Axis_Hagen/readme.md)   
 [Case2 : Intro to Turbulent flow](./validations/Axis_Turb/readme.md)
+
+
+## :seedling:裏番組：Evan P. Sheehan的PhD论文
+
+### 1. Introduction
+- 对流式换热器在低温系统中被广泛应用（Recuperative heat exchangers，不同于回热式换热器regenerative heat exchangers）。提高换热器性能可以降低低温端
+温度，或者减少系统所需要的制冷量。
+- 换热器设计的要求如下，最重要的是效率超过99%（可是效率的定义是？）
