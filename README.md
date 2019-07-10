@@ -70,6 +70,28 @@ OFtankentai
 - plate本身由高导热的材料做成，促使warm-cold流动之间的热交换，而spcaer是由低导热材料制成，防止热在轴方向传递。
 - 在提出这个结构的原论文中，作者仅仅得到了78%的效率，比设计效率还低10%，作者归纳了如下的原因：
   - plate结合不够紧密，导致冷热流间有helium泄漏
-  - 
+  - **寄生热负荷**：指的是热交换器虽然一般置于dewar之中，但是即便如此还是会有真空不够高，从外界泄漏进来热辐射的现象
+  - 实验时helium纯度遭到污染，会导致杂质冻结阻塞流路
+- 鉴于这个结构高度紧凑且容易实现高效率，本论文决定针对这个模型进行优化。计划采用铜作为plate，316钢作为spacer材料。
 
-<img src="./images/Evan/spphx.png" width = 550px>
+<img src="./images/Evan/spphx.png" width = 750px>
+
+- 关于slot做成圆的的还是方的讨论：
+
+#### 3.3 3.3. Stacked Plate Heat Exchanger Modeling
+
+### 4. Application of the Numerical Model to the SHI Heat Exchanger
+
+### 5. Fluent model
+
+- 前述的Matlab代码中的Nu以及摩擦系数需要从Fluent模拟中获取。整个模拟包含很多design point，各有不同的设定，以下描述各个部分的设定内容。
+
+#### 5.1 Geometry
+- 换热器的三维模型如下，由于fin方向比较长，为了减少计算负荷故忽略此方向而简化为2维计算。
+
+<img src="./images/Evan/fluentGeo1.png" width = 650px>
+
+- 4个重要参数：fin height, gap height, fin thickness, and spacer thickness的定义如图所示。
+
+<img src="./images/Evan/fluentGeo2.png" width = 750px>
+
