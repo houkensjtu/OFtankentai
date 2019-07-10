@@ -58,12 +58,18 @@ OFtankentai
 - Marquardt and Radebaugh的研究论文表示，要实现99%以上的效率，流量分布不均必须在2%以下。
 <img src="./images/Evan/pphx.png" width = 450px>
 
-
 ##### 3.2.2. Parallel Plates: Offset Strip-Fins
 - 与上面的形式基本相同，只是翅片不再是一长条到底，而是相互错开的形状，可以解决部分流量不均匀问题（因为流路之间都是互相通的），也可以破坏边界层促进热交换。
 - 与上面的形式相同的是，轴向热传导都会造成一定的损失。
 
 <img src="./images/Evan/ospphx.png" width = 450px>
 
-
 ##### 3.2.3. Stacked Staggered Perforated Plates
+
+- 进一步拓展上面的概念到这种交错plate结构的热交换器。plate的开口是互相错开的所以类似于3.2.2的形状，且plate之间有spacer隔开。
+- plate本身由高导热的材料做成，促使warm-cold流动之间的热交换，而spcaer是由低导热材料制成，防止热在轴方向传递。
+- 在提出这个结构的原论文中，作者仅仅得到了78%的效率，比设计效率还低10%，作者归纳了如下的原因：
+  - plate结合不够紧密，导致冷热流间有helium泄漏
+  - 
+
+<img src="./images/Evan/spphx.png" width = 550px>
