@@ -91,7 +91,37 @@ OFtankentai
 
 <img src="./images/Evan/fluentGeo1.png" width = 650px>
 
-- 4个重要参数：fin height, gap height, fin thickness, and spacer thickness的定义如图所示。
+- 4个重要参数：fin height, gap height, fin thickness, and spacer thickness的定义如图所示。为进一步简化模型，仅仅取出红线中的一个cell进行计算。
+红线的左右为periodic边界，保证出口与入口的velocity profile一致；另外上下设置为对称边界。
 
 <img src="./images/Evan/fluentGeo2.png" width = 750px>
 
+<img src="./images/Evan/boundCond.png" width = 550px>
+
+#### 5.2 Meshing
+
+- 采用方形网格，在入口处大约划分了100格（目测）；边界层的网格大小为计算容积中的1/5大。整个计算领域的网格约有44000格子。
+
+<img src="./images/Evan/boundMesh.png" width = 550px>
+
+#### 5.3 Fluent Setup / Solution Methods
+- 入口与出口处施加了periodic条件，强制迫使出入口的速度profile一致；另外periodic条件需要输入一个mass flow rate作为条件，是在Fluent里设置的。
+- 为了覆盖所有的设计条件，Evan设置很多mass flow rate，都在前述的design table里**（可是design table在哪里？）**
+- 入出口的温度条件与速度类似，只是需要设置一个温度差来保证能量守恒**（这是手动输入还是自动计算？）**
+- 湍流采用一方程的Spalart-Allmaras model，理由如下：
+  - Spalart-Allmaras model是为内部流动设计，与本模型吻合
+  - 本模型由于有periodic条件导致计算容易发散，而Spalart-Allmaras model计算较为稳定，只需求解一个附加变量turbulent viscosity nuTilda
+  - Fluent中的Spalart-Allmaras model自动施加壁面函数，因此可以在较为粗糙的网格条件下进行计算。本实验由于计算资源有限，此特性非常具有实际意义。
+  - Spalart-Allmaras model的参数都是default。**（可是default设置是什么设置？） **
+ - 一般一个case的计算在1000次迭代以内结束，时间花费1-5分钟。
+ 
+ <img src="./images/Evan/converg.png" width = 550px>
+ 
+#### 5.4 CFD-Post Flow Visualization and Derived Quantities
+- 一个演示例子：入口宽度0.7625mm，helium温度30K,2.6MPa；翅片温度31K
+- 结果如图所示，最高流速0.37m/s，Re数2105，对应的质量流量（整个热交换器）为10.5g/s
+
+ <img src="./images/Evan/fluentResult1.png" width = 750px>
+ 
+ 
+#### 5.5 Mesh Sensitivity Analysis
