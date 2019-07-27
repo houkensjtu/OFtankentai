@@ -77,7 +77,14 @@ OFtankentai
 <img src="./images/Evan/spphx.png" width = 750px>
 
 - 关于slot做成圆的的还是方的讨论：
-
+  - 比较在同样的外形尺寸条件下，是长方形的通道更有利于传热还是圆形孔更利于传热
+  - 比较的方法是假设同样的对流换热系数，比较单位长度的通道所具有的换热面积；其中将通道高度D除以宽度W作为参数
+  <img src="./images/Evan/channelAsp.png" width = 750px>
+  - 从上图看到，当通道变得无限细长的时候，圆形通道的换热面积将是方形的约pi/2也就是1.6倍左右（忽略两端的情况）
+  - 但是从制造工艺角度考虑，制造maker建议圆形通道之间的间距必须不小于板的厚度，这使得能够加工的通道个数受限。
+  - 考虑了圆形通道的间距后，两者的换热面积关系变成下图。基本上方形通道将具有更大面积，同时考虑到方形易于加工，
+  所以本项目就此决定采用方形通道。
+    <img src="./images/Evan/recCircleCompare.png" width = 750px>
 #### 3.3 3.3. Stacked Plate Heat Exchanger Modeling
 
 ### 4. Application of the Numerical Model to the SHI Heat Exchanger
