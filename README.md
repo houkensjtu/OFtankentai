@@ -98,7 +98,7 @@ OFtankentai
 
 
 - 在论文中还提到，计算这个fin效率有两种方法，一种是假设流体的温度都是均匀恒定的，但是实际情况中，当热交换发展起来，流体在冷热流方向就有温度差，温度是不均匀。已经有文献研究了修正以后的计算公式，效率比原来的结果稍微低一些。
-<img src="./images/Evan/finEff.png" width = 650px>
+<img src="./images/Evan/FinEff.png" width = 650px>
 
 
 #### 3.3 3.3. Stacked Plate Heat Exchanger Modeling
