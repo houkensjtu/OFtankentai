@@ -91,8 +91,16 @@ OFtankentai
     <img src="./images/Evan/recCircleCompare.png" width = 750px>
 
 #### 3.2.3.2. Stacked Plate Heat Exchanger Modeling
-- 这里突然转而讨论起了热交换器中的fin换热效率，没有具体说明fin和本换热器设计的关系
-- 
+- 这里突然转而讨论起了热交换器中的fin换热效率，没有具体说明fin和本换热器设计的关系; 猜测是因为，通过计算fin效率，可以近似计算换热量，从而计算换热器效率
+- 一般传热学中，fin的效率定义是实际换热量/当fin的温度都是根部温度时的换换热量，这里的定义也是类似的
+- 在计算fin效率时，一般会采用一个参数mL，这个参数mL的定义可以参照各种资料，下图是在网上找到的一个例子
+<img src="./images/Evan/finML.png" width = 650px>
+
+
+- 在论文中还提到，计算这个fin效率有两种方法，一种是假设流体的温度都是均匀恒定的，但是实际情况中，当热交换发展起来，流体在冷热流方向就有温度差，温度是不均匀。已经有文献研究了修正以后的计算公式，效率比原来的结果稍微低一些。
+<img src="./images/Evan/finEff.png" width = 650px>
+
+
 #### 3.3 3.3. Stacked Plate Heat Exchanger Modeling
 
 ### 4. Application of the Numerical Model to the SHI Heat Exchanger
