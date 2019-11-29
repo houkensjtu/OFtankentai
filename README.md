@@ -1,6 +1,25 @@
 OFtankentai
 ===========
 
+## OpenFOAM安装指南
+
+目前OpenFOAM存在两个主要版本，[OpenFOAM Foundation版](https://openfoam.org/)和[OpenCFD版本](https://www.openfoam.com/)。两者都提供
+了docker容器安装和源代码编译的方式。
+
+### OpenFOAM Foundation
+由编写FOAM代码的创始人Weller参加，Weller原先是OpenCFD的成员，后退出并自行独立参加了OpenFOAM Foundation。现在Foundation提供的安装方式有：
+1. Ubuntu官方包：如果是Ubuntu操作系统，可以通过添加官方包repo来直接安装最新的binary版本。
+2. Docker容器：如果是其他Linux发行版，可以通过Docker来安装打包好的OpenFoam。首先需要按照教程，安装好Docker容器，
+然后下载并执行安装脚本到/usr/bin/openfoam-dev-linux来下载激活容器。以后只要每次运行这个脚本，就可以启动容器。
+需要注意的是，Docker容器不能随地启动，必须要到/home/user/OpenFOAM/usercontainername/里面才可以启动。
+**目前在W530上就是这个方案。**安装了两个版本，openfoam6和openfoam-dev版本，都可以通过/usr/bin里的脚本启动。
+
+在windows上当然也可以安装Docker，但是其过程并不是很友好，需要权限和BIOS调整，所以并没有在公司电脑采用。
+3. 编译源代码。以前在Ubuntu上我是多次自己编译过的，目前在Deepin上编译Paraview好像总是有问题。
+4. 在Win10上通过WSL来安装Ubuntu版本的binary。**目前在公司电脑就是这样的方案。**安装的是openfoam5版本，paraview因为一些兼容问题装的是
+比较旧的5.4，最新是5.6版本会出现一些问题。binary版本不需要启动脚本，实体文件就安装在/opt下面。
+
+
 ## :herb:Openfoam探险队教程中文翻译
 
 >OpenFOAM 探险队(原名 OpenFOAM たんけんたい)是由一名日本OpenFOAM资深用户在其博客发表的OpenFOAM源代码探索系列教程。
@@ -10,6 +29,7 @@ OFtankentai
 >原作:Yuu Kasuga (penguinitis2002@yahoo.co.jp)
 >
 >翻译:houkensjtu (houkensjtu@gmail.com)
+
 
 作者序:
 
